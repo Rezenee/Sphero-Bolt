@@ -12,7 +12,7 @@ async function startProgram() {
 	// Turns 90 degrees then rolls at speed 100 for 2 seconds
 	await roll(90, 100, 2);
 
-	// Turns 270 degrees then rolls at speed 100 for 2 seconds
+	// Turns 270 degrees then rolls at speed 141 for 2 seconds
 	await roll(270, 141, 2);	
 }
 

@@ -8,6 +8,7 @@ async function startProgram() {
 	// This is the order that the bot will move in. 
 	// Place the functions down sequentially
 	//Plays Red screen, then sleeps for a second
+	//When you call the animation 0 is the first animation defined in the program, 1 is the second etc.
 	playMatrixAnimation(0, false);
 	await delay(1);
 	// Yellow Screen; sleep
@@ -56,7 +57,7 @@ registerMatrixAnimation({
 		[[0, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 1, 6, 1, 1, 0], [0, 0, 0, 1, 5, 6, 1, 0], [0, 0, 1, 6, 4, 5, 1, 0], [0, 1, 4, 4, 5, 3, 1, 0], [0, 1, 7, 2, 2, 7, 3, 1], [0, 0, 1, 7, 2, 3, 1, 0], [0, 0, 0, 1, 1, 1, 0, 0]]],
 	palette: [{ r: 255, g: 255, b: 255}, { r: 0, g: 0, b: 255 }, { r: 255, g: 0, b: 0 }, { r: 255, g: 64, b: 0 }, 
                   { r: 255, g: 128, b: 0 },  { r: 255, g: 191, b: 0 }, { r: 255, g: 255, b: 0 }, { r: 255, g: 0, b: 255 }],
-	fps: 30,
+	fps: 10,
 
 	transition: MatrixAnimationTransition.None
 });
